@@ -36,3 +36,97 @@
     transform: rotate(360deg);
   }
 }
+
+#head{
+  background-color: #AA0000;
+  color: white;
+  
+  justify-content: center;
+  margin-left: 50pt;
+  margin-right: 50pt;
+  text-align: center;
+}
+
+#head_container{
+  color: #282c34;
+  background-color: #282c34;
+}
+
+#FormContainer1{
+  background-color:blanchedalmond;
+}
+
+#FormContainer2{
+  background-color:floralwhite;
+}
+
+#FormContainer3{
+  background-color: blanchedalmond;
+}
+
+#IngredientLabel{
+  font-size : larger;
+  margin : 8px 0;
+  margin-left : 25%;
+  font-weight : bold;
+  display : inline-block;
+}
+
+#CalorieLabel{
+  font-size : larger;
+  margin: 8px 0;
+  margin-left: 25%;
+  font-weight: bold;
+  display:inline-block;
+}
+
+.sideLabel{
+  font-size: large;
+  margin: 8px 0;
+  margin-left: 25%;
+  font-weight: bold;
+  display:inline-block;
+}
+
+input[type=text] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(165, 161, 161);
+  border-radius: 4px;
+  margin-left: 1%;
+  font-size: medium;
+}
+#submit{
+  height: fit-content;
+  margin-left: 35%;
+  margin-top: 5px;
+}
+button{
+  width: 10%;
+  height:1cm;
+  font-size: medium;
+  background-color: #AA0000;
+  color: white;
+  margin-left: 5pt;
+  margin-right: 5pt;
+  
+}
+
+button:hover{
+  background-color:teal;
+}
+
+select{
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(165, 161, 161);
+  border-radius: 4px;
+  margin-left: 1%;
+  font-size: medium;
+  text-align: center;
+
+}
