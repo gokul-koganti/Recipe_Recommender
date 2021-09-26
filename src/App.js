@@ -2,7 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import  Form from './components/Form.js';
 import Header from './components/Header';
+import Result from './components/Result';
 import React,{Component} from 'react';
+
 /*function App() {
   
   return (
@@ -18,18 +20,18 @@ class App extends Component{
       super()
       this.state={
           cuisine : "Any",
-          min_cal : "",
-          max_cal : "",
+          NoIngredients : 0,
           ingredients: new Set()  
         }
       }
-    formGetter = (cuisine, minCal, maxCal, ing) => {
+    formGetter = (cuisineInput, NoIngredientsInput, ingredientInput) => {
       this.setState({
-        cuisine : cuisine,
-          min_cal : minCal,
-          max_cal : maxCal,
-          ingredients: ing 
+        cuisine : cuisineInput,
+        NoIngredients: NoIngredientsInput ,
+        ingredients: ingredientInput 
       })
+
+
     }
 
   render(){
@@ -37,13 +39,11 @@ class App extends Component{
     <div>
     <Header/>
     <Form sendFormData = {this.formGetter}/>
-      <p> cuisine: {this.state.cuisine}</p>
-      <p> max: {this.state.max_cal}</p>
-      <p> min: {this.state.min_cal}</p>
-      <p> ingredients: {this.state.ingredients}</p>
+    <Result/>
     </div>
     )
   }
 }
 
 export default App;
+
