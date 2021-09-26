@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import  Form from './components/Form.js';
 import Header from './components/Header';
-import Result from './components/Result';
 import React,{Component} from 'react';
 
 /*function App() {
@@ -39,7 +38,6 @@ class App extends Component{
     <div>
     <Header/>
     <Form sendFormData = {this.formGetter}/>
-    <Result/>
     </div>
     )
   }
