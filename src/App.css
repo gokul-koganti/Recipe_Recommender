@@ -37,6 +37,8 @@
   }
 }
 
+
+
 #head{
   background-color: #AA0000;
   color: white;
@@ -46,6 +48,7 @@
   margin-right: 50pt;
   text-align: center;
 }
+
 
 #head_container{
   color: #282c34;
@@ -84,38 +87,62 @@
   font-size: large;
   margin: 8px 0;
   margin-left: 25%;
+  margin-top: 15px;
   font-weight: bold;
   display:inline-block;
 }
 
-input[type=text] {
+input {
   width: 20%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
   border: 2px solid rgb(165, 161, 161);
   border-radius: 4px;
-  margin-left: 1%;
+  margin-left: 25%;
   font-size: medium;
 }
+ul{
+  margin-left: 25%;
+  margin-bottom: 5%;
+}
+li {
+  width:fit-content;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: azure;
+  border: 2px solid rgb(165, 161, 161);
+  border-radius: 4px;
+  margin-left: 2%;
+  font-size: medium;
+  display:inline-table;
+  
+}
+
+
+li:hover{
+  background-color:#AA0000;
+  color: white;
+}
+
 #submit{
   height: fit-content;
-  margin-left: 35%;
+  margin-left: 30%;
   margin-top: 5px;
 }
 button{
   width: 10%;
   height:1cm;
   font-size: medium;
-  background-color: #AA0000;
-  color: white;
   margin-left: 5pt;
   margin-right: 5pt;
-  
+  background-color:honeydew ;
 }
 
 button:hover{
-  background-color:teal;
+  background-color:green;
+  color:white;
 }
 
 select{
@@ -125,8 +152,9 @@ select{
   box-sizing: border-box;
   border: 2px solid rgb(165, 161, 161);
   border-radius: 4px;
-  margin-left: 1%;
+  margin-left: 25%;
   font-size: medium;
   text-align: center;
 
 }
+
