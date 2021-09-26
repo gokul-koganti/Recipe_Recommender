@@ -35,6 +35,9 @@ class Form extends Component{
         for (const item of this.state.ingredients) {
             console.log(1,item)
           }
+        const items = [...this.state.ingredients]
+        const list_items = items.map((item) => <li onMouseDown={this.removeHandler} id={item}> {item}</li>);
+       return(<ul>{list_items}</ul>);
         
     }
     addHandler = (event)=> {
@@ -44,12 +47,14 @@ class Form extends Component{
             numberIngredients : this.state.numberIngredients,
             ingredients:new Set(this.state.ingredients).add(ingredient)
         
-        },()=>this.printHander(),()=>console.log(this.state))
+        },()=>console.log(this.state))
+        document.getElementById("ingredient").innerHTML=""
     }
 
     
-    removeHandler = () => {
-        var discardIngredient = window.prompt("Enter the item to be discarded: ");
+    removeHandler = (event) => {
+        //var discardIngredient = window.prompt("Enter the item to be discarded: ");
+        var discardIngredient = event.target.id
         var ingredientList = this.state.ingredients
         ingredientList.delete(discardIngredient)
         this.setState({
@@ -57,7 +62,7 @@ class Form extends Component{
             numberIngredients : this.state.numberIngredients,
             ingredients: ingredientList
         
-        },()=>this.printHander(),()=>console.log(this.state))
+        },()=>console.log(this.state))
 
     }
     
@@ -83,32 +88,32 @@ class Form extends Component{
                     
                    
                     <div id='FormContainer1'>
-                    <label id='IngredientLabel'>Ingredients</label><br/>
-                    <label class='sideLabel'> Ingredient: </label>
+                    <label class='sideLabel'> Ingredient: </label><br/>
                      <input type = "text" id = "ingredient" /> 
-                     <button onClick ={this.addHandler} type="button" > Add item</button>
-                     <button onClick ={this.removeHandler} type="button"> Remove item</button><br/><br/>
-                     <label class='sideLabel'>Added Items:</label>
-                    <p id="addedItems"></p>
-                    </div>
-
-                    <div id='FormContainer2'>
+                     <button onClick ={this.addHandler} type="button" id= "addButton" > Add item</button>
+                     
                     
-                    <label class='sideLabel'> Number of Ingredients: </label>
+                    </div>
+                    <label class='sideLabel'>Added Items:</label>
+                    <div id='FormContainer2'>{this.printHander()}</div>
+
+                    <div id='FormContainer3'>
+                    
+                    <label class='sideLabel'> Maximum Number of Ingredients: </label><br/>
                      <input type = "number" id = "NoIngredient" onChange={this.numberUpdate} /> 
                     </div>
                     
 
                   
-                    <div id = 'FormContainer3'>
-                    <label class='sideLabel'> Cusine Selection: </label>
+                    <div id = 'FormContainer4'>
+                    <label class='sideLabel'> Cusine Selection: </label><br/>
                     <select value={this.state.cuisine} onChange={this.cuisineUpdate} >{
                         cuisine_list.map((category,i) => <option key={i}>{category}</option>)
                     }
                     </select>
                     </div>
 
-                 <div id = 'FormContainer4'>
+                 <div id = 'FormContainer5'>
                     <button type="button" id='submit' onClick={this.handleSubmit}  > <h4>Search Recipes</h4> </button>
                     </div>
                 </form>
