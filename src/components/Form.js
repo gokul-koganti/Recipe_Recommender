@@ -6,58 +6,45 @@ class Form extends Component{
         super()
         this.state={
             cuisine : "Any",
-            min_cal : "",
-            max_cal : "",
+            numberIngredients: 0,
             ingredients: new Set()  
             
         }
-    }
-
-   
-    minUpdate = (event) =>{
-        this.setState({
-            cuisine : this.state.cuisine,
-            min_cal : event.target.value,
-            max_cal : this.state.max_cal,
-            ingredients:this.state.ingredients
-        
-        },()=>console.log(this.state))
-    }
-
-    
-    
-    maxUpdate = (event) =>{
-        this.setState({
-            cuisine : this.state.cuisine,
-            min_cal : this.state.min_cal,
-            max_cal : event.target.value,
-            ingredients:this.state.ingredients
-        
-        },()=>console.log(this.state))
     }
 
     
     cuisineUpdate = (event) =>{
         this.setState({
             cuisine : event.target.value,
-            min_cal : this.state.min_cal,
-            max_cal : this.state.max_cal,
+            numberIngredients : this.state.numberIngredients,
+            ingredients : this.state.ingredients
+        
+        },()=>console.log(this.state))
+    }
+
+    numberUpdate = (event) =>{
+        this.setState({
+            cuisine : this.state.cuisine,
+            numberIngredients: event.target.value,
             ingredients:this.state.ingredients
         
         },()=>console.log(this.state))
     }
     
-    
+    printHander =() => {
+        for (const item of this.state.ingredients) {
+            console.log(1,item)
+          }
+        
+    }
     addHandler = (event)=> {
         const ingredient = document.getElementById("ingredient").value
-        console.log(ingredient)
         this.setState({
             cuisine : this.state.cuisine,
-            min_cal : this.state.min_cal,
-            max_cal : this.state.max_cal,
+            numberIngredients : this.state.numberIngredients,
             ingredients:new Set(this.state.ingredients).add(ingredient)
         
-        },()=>console.log(this.state))
+        },()=>this.printHander(),()=>console.log(this.state))
     }
 
     
@@ -67,16 +54,15 @@ class Form extends Component{
         ingredientList.delete(discardIngredient)
         this.setState({
             cuisine : this.state.cuisine,
-            min_cal : this.state.min_cal,
-            max_cal : this.state.max_cal,
+            numberIngredients : this.state.numberIngredients,
             ingredients: ingredientList
         
-        },()=>console.log(this.state))
+        },()=>this.printHander(),()=>console.log(this.state))
 
     }
     
     handleSubmit = (event) => {
-        this.props.sendFormData(this.state.cuisine, this.state.min_cal,this.state.max_cal,this.state.ingredients)
+        this.props.sendFormData(this.state.cuisine, this.state.numberIngredients,this.state.ingredients)
         // alert(this.state.max_cal)
         // console.log(this.state.ingredients)
     event.preventDefault()
@@ -91,7 +77,7 @@ class Form extends Component{
         "Peruvian","Cuban","Tibetian","Salvadorian","Egyptian","Greek","Belgian","Irish","Welsh","Mormon","Cajun","Portugese",
     "Turkish","Haitian","Tahitian","Kenyan","Korean","Algerian","Nigerian","Libyan"]
         return(
-            <div>
+            <div class="container">
 
                 <form onSubmit={this.handleSubmit}>
                     
@@ -102,17 +88,18 @@ class Form extends Component{
                      <input type = "text" id = "ingredient" /> 
                      <button onClick ={this.addHandler} type="button" > Add item</button>
                      <button onClick ={this.removeHandler} type="button"> Remove item</button><br/><br/>
+                     <label class='sideLabel'>Added Items:</label>
+                    <p id="addedItems"></p>
+                    </div>
+
+                    <div id='FormContainer2'>
+                    
+                    <label class='sideLabel'> Number of Ingredients: </label>
+                     <input type = "number" id = "NoIngredient" onChange={this.numberUpdate} /> 
                     </div>
                     
 
-                    <div id = 'FormContainer2'>
-                    <label id ='CalorieLabel'> <b>Calorie Filter</b> </label><br/><br/>
-                    <label class='sideLabel'> Minimum Calories: </label> 
-                    <input type = "text" value={this.state.min_cal} onChange={this.minUpdate}/><br/>
-                    <label class='sideLabel'> Maximum Calories: </label>
-                     <input type = "text" value={this.state.max_cal} onChange={this.maxUpdate}/><br/>
-                    </div>
-
+                  
                     <div id = 'FormContainer3'>
                     <label class='sideLabel'> Cusine Selection: </label>
                     <select value={this.state.cuisine} onChange={this.cuisineUpdate} >{
@@ -121,8 +108,9 @@ class Form extends Component{
                     </select>
                     </div>
 
-
-                <button type="button" id='submit' onClick={this.handleSubmit}  > <h4>Search Recipes</h4> </button>
+                 <div id = 'FormContainer4'>
+                    <button type="button" id='submit' onClick={this.handleSubmit}  > <h4>Search Recipes</h4> </button>
+                    </div>
                 </form>
             </div>
         )
