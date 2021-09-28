@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import RecipeList from "./RecipeList";
 
 class Form extends Component{
    
@@ -7,12 +8,10 @@ class Form extends Component{
         this.state={
             cuisine : "Any",
             numberIngredients: 0,
-            ingredients: new Set()  
-            
+            ingredients: new Set()             
         }
     }
 
-    
     cuisineUpdate = (event) =>{
         this.setState({
             cuisine : event.target.value,
@@ -38,8 +37,8 @@ class Form extends Component{
         const items = [...this.state.ingredients]
         const list_items = items.map((item) => <li onMouseDown={this.removeHandler} id={item}> {item}</li>);
        return(<ul>{list_items}</ul>);
-        
     }
+
     addHandler = (event)=> {
         const ingredient = document.getElementById("ingredient").value
         this.setState({
@@ -51,9 +50,7 @@ class Form extends Component{
         document.getElementById("ingredient").innerHTML=""
     }
 
-    
     removeHandler = (event) => {
-        //var discardIngredient = window.prompt("Enter the item to be discarded: ");
         var discardIngredient = event.target.id
         var ingredientList = this.state.ingredients
         ingredientList.delete(discardIngredient)
@@ -63,18 +60,13 @@ class Form extends Component{
             ingredients: ingredientList
         
         },()=>console.log(this.state))
-
     }
     
     handleSubmit = (event) => {
+        event.preventDefault();
+        //this.props.handleFormSubmit(this.state.cuisine, this.state.numberIngredients,this.state.ingredients);        
         this.props.sendFormData(this.state.cuisine, this.state.numberIngredients,this.state.ingredients)
-        // alert(this.state.max_cal)
-        // console.log(this.state.ingredients)
-    event.preventDefault()
-        
     }
-
-   
 
     render(){
         const cuisine_list = ["Any", "Mexican", "Swedish", "Latvian", "Italian", "Spanish", "American","Scottish","British","Thai",
@@ -86,13 +78,11 @@ class Form extends Component{
 
                 <form onSubmit={this.handleSubmit}>
                     
-                   
                     <div id='FormContainer1'>
                     <label class='sideLabel'> Ingredient: </label><br/>
                      <input type = "text" id = "ingredient" /> 
                      <button onClick ={this.addHandler} type="button" id= "addButton" > Add item</button>
                      
-                    
                     </div>
                     <label class='sideLabel'>Added Items:</label>
                     <div id='FormContainer2'>{this.printHander()}</div>
@@ -102,9 +92,7 @@ class Form extends Component{
                     <label class='sideLabel'> Maximum Number of Ingredients: </label><br/>
                      <input type = "number" id = "NoIngredient" onChange={this.numberUpdate} /> 
                     </div>
-                    
-
-                  
+                       
                     <div id = 'FormContainer4'>
                     <label class='sideLabel'> Cusine Selection: </label><br/>
                     <select value={this.state.cuisine} onChange={this.cuisineUpdate} >{
