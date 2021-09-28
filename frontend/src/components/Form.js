@@ -47,7 +47,7 @@ class Form extends Component{
             ingredients:new Set(this.state.ingredients).add(ingredient)
         
         },()=>console.log(this.state))
-        document.getElementById("ingredient").innerHTML=""
+        document.getElementById("ingredient").value = ""
     }
 
     removeHandler = (event) => {
