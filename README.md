@@ -1,4 +1,5 @@
 https://img.shields.io/github/license/gokul-koganti/Recipe_Recommender
+https://zenodo.org/badge/DOI/10.5281/zenodo.5534986.svg
 
 <h1>Getting started:<h1>
 
