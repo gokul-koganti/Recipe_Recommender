@@ -55,55 +55,37 @@
   background-color: #282c34;
 }
 
-#FormContainer1{
+#FormContainer1, #FormContainer3,#FormContainer5 {
   background-color:blanchedalmond;
 }
 
-#FormContainer2{
+#FormContainer2, #FormContainer4{
   background-color:floralwhite;
 }
 
-#FormContainer3{
-  background-color: blanchedalmond;
-}
 
-#IngredientLabel{
-  font-size : larger;
-  margin : 8px 0;
-  margin-left : 25%;
-  font-weight : bold;
-  display : inline-block;
-}
-
-#CalorieLabel{
-  font-size : larger;
-  margin: 8px 0;
-  margin-left: 25%;
-  font-weight: bold;
-  display:inline-block;
-}
 
 .sideLabel{
   font-size: large;
   margin: 8px 0;
-  margin-left: 25%;
+  margin-left: 5%;
   margin-top: 15px;
   font-weight: bold;
   display:inline-block;
 }
 
 input {
-  width: 20%;
+  width: 10cm;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
   border: 2px solid rgb(165, 161, 161);
   border-radius: 4px;
-  margin-left: 25%;
+  margin-left: 5%;
   font-size: medium;
 }
 ul{
-  margin-left: 25%;
+  margin-left: 5%;
   margin-bottom: 5%;
 }
 li {
@@ -127,12 +109,18 @@ li:hover{
 }
 
 #submit{
-  height: fit-content;
-  margin-left: 30%;
-  margin-top: 5px;
+  height: 2%;
+  margin-left: 5%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  border-color: black;
+  border-style: solid;
+  text-align: center;
 }
+
 button{
-  width: 10%;
+  width: 5cm;
   height:1cm;
   font-size: medium;
   margin-left: 5pt;
@@ -152,8 +140,17 @@ select{
   box-sizing: border-box;
   border: 2px solid rgb(165, 161, 161);
   border-radius: 4px;
-  margin-left: 25%;
+  margin-left: 5%;
   font-size: medium;
   text-align: center;
+
+}
+
+.container{
+  width: 50%;
+  margin-left: 5%;
+  border-radius: 10px;
+  border-color: black;
+  border-style:solid;
 
 }
