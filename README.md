@@ -26,8 +26,8 @@ Backend server will be hosted at: http://localhost:5000/
 Roadmap
 Team Members
   
-  <h2> Motivation </h2><br/>
-  <b> An excerpt from " Diary of a wimpy kid "</b>
+  <h2> Motivation </h2>
+  <b> An excerpt from " Diary of a wimpy kid "</b><br/>
   <p> One day my roommate and I went grocery shopping. My roommate has bought potatoes and frosting to make a weird dish for the next day's lunch. The next day, I woke up early at 2:07 pm to help my roommate with this dish, that I know nothing about, only to find him nowhere. He has gone to the library to work on his Software Engineering project. HOW SELFISH OF HIM? I AM LITERALLY STARVING HERE AND HE GOES OFF SOMEWHERE TO DO HIS PROJECT THAT IS DUE TODAY?
 </p>
 <p>
