@@ -41,9 +41,10 @@
   </li>
   <li> Brwoser is automatically with the frontend content</li>
 </ol>
-
-Site will be hosted at: http://localhost:3000/
-Backend server will be hosted at: http://localhost:5000/
+<ul>
+  <li> Site will be hosted at: http://localhost:3000/ </li>
+  <li> Backend server will be hosted at: http://localhost:5000/ </li>
+</ul>
 
 Roadmap
 Team Members
