@@ -22,7 +22,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)|2|
 | Use of syntax checkers. |2|config files iin  GH showing this checker's config  |
 | Use of code coverage |2|config files in GH|
 | other automated analysis tools|2|config files in GH|
-| test cases exist|2|dozens of tests and those test cases are more than 30% of the  code base|
+| test cases exist|2||
 | test cases are routinely executed|2|e.g. travis-com.com or github actions or something|
 | the files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up|2||
 | issues are discussed before they are closed|2|every issue is dicussed by all, then assigned to one appropriate person for closure|
