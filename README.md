@@ -18,24 +18,30 @@
 </p>
 <p>
  
-<h1>Getting started:<h1>
+<h2>Prerequisites</h2>
 
-<h2>Prerequisite:<h2>
-Download node 14.17.6
-Installation:
-  1.Setup Node with default settings
-  2.Clone this github repo
-  3. navigate to backend folder and open terminal to install nodejs librarys and starting DB Server
-    a)npm install express cors mongodb dotenv
-    b)npm install -g nodemon
-    c)npx nodemon
-   // server is hosted at port 5000
-  4. navigative to frontend folder and open terminal to install axios nodjs and starting
-     a) npm install -g axios
-     b) npm start
-  // server is hosted at port 3000
-  5. automatically browser is opened with website
-  
+<h2> Execution Steps</h2>
+<ol>
+  <li> Setup Node with default settings. </li>
+  <li> Clone this github repository.</li>
+  <li> Open terminal and navigate to the backend folder.</li>
+  <li> Run the following Commands:
+    <ul>
+      <li> npm install express cors mongodb dotenv </li>
+      <li> npm install -g nodemon </li>
+      <li> npx nodemon </li>
+    </ul> 
+  </li>
+  <li> Open terminal and navigate to the frontend folder.</li>
+  <li> Run the following Commands:
+    <ul>
+      <li> npm install -g axios </li>
+      <li> npm start </li>
+    </ul> 
+  </li>
+  <li> Brwoser is automatically with the frontend content</li>
+</ol>
+
 Site will be hosted at: http://localhost:3000/
 Backend server will be hosted at: http://localhost:5000/
 
