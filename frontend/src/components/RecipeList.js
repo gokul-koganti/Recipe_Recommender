@@ -7,6 +7,6 @@ const RecipeList = ({recipes}) => {
         return <Recipe key={recipe._id} recipe={recipe}/>
     });
 
-    return <div className='ui relaxed divided list'>{renderedRecipes}</div>;
+    return <table id="resultOuterContainer" > {renderedRecipes}</table>;
 };
 export default RecipeList;
