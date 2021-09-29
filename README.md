@@ -33,4 +33,10 @@ Team Members
 <p>
   After 1 hr of angry rants, I have realized that I should eat something to have a good siesta. But I didn't know what to cook. People always told me that cooking is a basic survival skill and I should learn to cook. I always took it for granted. Now I cannot order food from outside because I was broke after purchasing that super cool, absolutely unnecessary, formula 1 merchandize. That is when I thought, if only there is an app that could help me find recipes based on the ingredients I have in my pantry.
 </p>
+ <br/> 
+<b> On a serious note</b><br/><br/>
+  <p> 
+    Cooking is a basic survival skill and it is more than standing infront of the stove and following instructions. Figuring out what to cook with what we have is equally. If we start cooking something that comes on top off our head, we might end up messing it when we find that an ingredient is missing. So we have decided to come up with an application that would help us breeze past the cooking process in this time-crunch world.
+</p>
+<p>
  
