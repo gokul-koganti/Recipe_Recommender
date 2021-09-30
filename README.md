@@ -29,11 +29,11 @@
 - setup for backend
     open terminal and navigate to the frontend folder and execute `npm install`
 
-<h2> Execution Steps</h2>
-<ol>
+## Execution Steps
+
  - start backend server using `npx nodemon`
  - start frontend server using `npm start`
  - automatically a browser window is opened
 
-Roadmap
-Team Members
+## Roadmap
+## Team Members
