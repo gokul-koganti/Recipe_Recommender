@@ -1,9 +1,9 @@
 import React from 'react';
 import '../video.css';
-import Card from 'react-bootstrap/Card'
 import VideoURL from './VideoURL';
 
 const Recipe = (recipe) => {
+    console.log("XXX-Recipe");
     var ingredients_seperated = recipe.recipe['Cleaned-Ingredients'].split(',');
     ingredients_seperated = ingredients_seperated.map((ingredient) => <li class= "recipe_ingredients" > {ingredient}</li>);
     return (
@@ -19,7 +19,7 @@ const Recipe = (recipe) => {
                     
                     
                  </body>
-                {/* <VideoURL getRecipeVideo={recipe.recipe.TranslatedRecipeName}/> */}
+                <VideoURL recipe={recipe.recipe.TranslatedRecipeName}/>
             </tr>   
             
             

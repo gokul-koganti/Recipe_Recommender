@@ -23,9 +23,10 @@ class VideoURL extends React.Component{
         }
     }
      getRecipeVideo = async (recipeName) => {
+        console.log("XXX-VideoURL-getRecipeVideo");
       const response = await youtube.get('/search', {
           params: {
-              q: 'Masala Karela Recipe'
+              q: recipeName
           }
       })
       this.setState({
@@ -33,7 +34,8 @@ class VideoURL extends React.Component{
       })
   }
     render(){
-        this.getRecipeVideo();
+        console.log("XXX-VideoURL");
+        this.getRecipeVideo(this.props.recipe);
         return(
             <a href={'https://www.youtube.com/watch?v='+this.state.videoId}>click me</a>
 

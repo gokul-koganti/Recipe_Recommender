@@ -20,7 +20,7 @@ export default class RecipesDAO {
   static async getRecipes({
     filters = null,
     page = 0,
-    recipesPerPage = 20,
+    recipesPerPage = 10,
   } = {}) {
     let query
     if (filters) {

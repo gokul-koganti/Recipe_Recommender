@@ -5,6 +5,7 @@ import Header from './components/Header';
 import recipeDB from './apis/recipeDB';
 import RecipeList from './components/RecipeList';
 import React,{Component} from 'react';
+import qs from "qs";
 
 class App extends Component{
     constructor(){
@@ -36,17 +37,15 @@ class App extends Component{
       })
   
       const items = Array.from(ingredientsInput)
-      this.getRecipeDetails(items[0]);
+      this.getRecipeDetails(items);
 
   };
  
   getRecipeDetails = async (ingredient) => {
     try {
-      const response = await recipeDB.get('/recipes', {
-        params: {
-          'CleanedIngredients' : ingredient
-        }
-      })
+      const queryParams = ingredient.map((n) => `CleanedIngredients=${n}`).join('&')
+    
+      const response = await recipeDB.get(`/recipes?${queryParams}`);
       this.setState({
         recipeList: response.data.recipes
       });
