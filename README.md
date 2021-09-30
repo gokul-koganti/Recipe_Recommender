@@ -55,7 +55,7 @@ Source documentation can be found at: [Recipe Recommender Docs]
 ## Roadmap
 ## Team Members
   * Smayana Pidugu 
-  * Gokul Koganti
+  * Gokul Krishna Koganti (gkogant@ncsu.edu)
   * Rachana Kondabala
   * Harikrishna Selvaraj
   * Kiran Bharadwaj
