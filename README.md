@@ -18,33 +18,22 @@
 </p>
 <p>
  
-<h2>Prerequisites</h2>
+## Prerequisites
+  Install NodeJS from `https://nodejs.org/en/download/`
 
-<h2> Execution Steps</h2>
-<ol>
-  <li> Setup Node with default settings. </li>
-  <li> Clone this github repository.</li>
-  <li> Open terminal and navigate to the backend folder.</li>
-  <li> Run the following Commands:
-    <ul>
-      <li> npm install express cors mongodb dotenv </li>
-      <li> npm install -g nodemon </li>
-      <li> npx nodemon </li>
-    </ul> 
-  </li>
-  <li> Open terminal and navigate to the frontend folder.</li>
-  <li> Run the following Commands:
-    <ul>
-      <li> npm install -g axios </li>
-      <li> npm start </li>
-    </ul> 
-  </li>
-  <li> Brwoser is automatically with the frontend content</li>
-</ol>
-<ul>
-  <li> Site will be hosted at: http://localhost:3000/ </li>
-  <li> Backend server will be hosted at: http://localhost:5000/ </li>
-</ul>
+## Setup
 
-Roadmap
-Team Members
+- clone repository using `git clone https://github.com/gokul-koganti/Recipe_Recommender.git`
+- setup for frontend
+    open terminal and navigate to the frontend folder and execute `npm install`
+- setup for backend
+    open terminal and navigate to the frontend folder and execute `npm install`
+
+## Execution Steps
+
+ - start backend server using `npx nodemon`
+ - start frontend server using `npm start`
+ - automatically a browser window is opened
+
+## Roadmap
+## Team Members
