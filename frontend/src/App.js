@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import  Form from './components/Form.js';
 import Header from './components/Header';
@@ -6,9 +5,14 @@ import recipeDB from './apis/recipeDB';
 import RecipeList from './components/RecipeList';
 import React,{Component} from 'react';
 
+// Main component of the project
 class App extends Component{
+
+    // constructor for the App Component
     constructor(){
+
       super()
+
       this.state={
           cuisine : "Any",
           NoIngredients : 0,
@@ -17,18 +21,10 @@ class App extends Component{
           recipe: null,
           recipeList: []
         }
+
       }
-
-    //callback function before Form Component is invoked by render function
-    formGetter = (cuisineInput, NoIngredientsInput, ingredientInput) => {
-      this.setState({
-        cuisine : cuisineInput,
-        NoIngredients: NoIngredientsInput ,
-        ingredients: ingredientInput 
-      })
-    }
-
-    //callback function that Form Component after user input
+    
+    // Function to get the user input from the Form component on Submit action
     handleSubmit = async (cuisineInput,noIngredientsInput,ingredientsInput) => {
       this.setState({
         cuisine: cuisineInput,
@@ -36,18 +32,19 @@ class App extends Component{
         ingredients:ingredientsInput
 
       })
-      //converting set datatype to array 
+  
       const items = Array.from(ingredientsInput)
-      //invoking getRecipeDetails function
-      this.getRecipeDetails(items);
+      this.getRecipeDetails(items[0]);
 
   };
  
-  // This function invokes MongoDB to fetch recipe details based on user input
   getRecipeDetails = async (ingredient) => {
     try {
-      const queryParams = ingredient.map((n) => `CleanedIngredients=${n}`).join('&')
-      const response = await recipeDB.get(`/recipes?${queryParams}`);
+      const response = await recipeDB.get('/recipes', {
+        params: {
+          'CleanedIngredients' : ingredient
+        }
+      })
       this.setState({
         recipeList: response.data.recipes
       });
@@ -60,7 +57,15 @@ class App extends Component{
     return(
       <div>
         <Header/>
+
+         {/* handleSubmit function is being sent as a prop to the form component*/}
+
         <Form sendFormData = {this.handleSubmit}/>
+
+        {/* RecipeList is the component where results are displayed. 
+        App's recipeList state item is being sent as a prop
+        */}
+
         <RecipeList recipes={this.state.recipeList}/>
       </div>
     )
