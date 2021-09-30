@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-import RecipeList from "./RecipeList";
 
+//Form Component task is to take user inputs, process inputs and send it back to App Component
 class Form extends Component{
    
     constructor(){
@@ -12,6 +12,7 @@ class Form extends Component{
         }
     }
 
+    //callback function on updation of cuisine input
     cuisineUpdate = (event) =>{
         this.setState({
             cuisine : event.target.value,
@@ -21,6 +22,7 @@ class Form extends Component{
         },()=>console.log(this.state))
     }
 
+    //callback function on updation of number of ingredients input
     numberUpdate = (event) =>{
         this.setState({
             cuisine : this.state.cuisine,
@@ -30,6 +32,7 @@ class Form extends Component{
         },()=>console.log(this.state))
     }
     
+    //functions that handles printing and removal of ingredients 
     printHander =() => {
         for (const item of this.state.ingredients) {
             console.log(1,item)
@@ -39,6 +42,7 @@ class Form extends Component{
        return(<ul>{list_items}</ul>);
     }
 
+    //callback function that handles addition of ingredients
     addHandler = (event)=> {
         const ingredient = document.getElementById("ingredient").value
         this.setState({
@@ -46,10 +50,11 @@ class Form extends Component{
             numberIngredients : this.state.numberIngredients,
             ingredients:new Set(this.state.ingredients).add(ingredient)
         
-        },()=>console.log(this.state))
+        })
         document.getElementById("ingredient").value = ""
     }
 
+    //callback function that handles removal of ingredients
     removeHandler = (event) => {
         var discardIngredient = event.target.id
         var ingredientList = this.state.ingredients
@@ -64,7 +69,6 @@ class Form extends Component{
     
     handleSubmit = (event) => {
         event.preventDefault();
-        //this.props.handleFormSubmit(this.state.cuisine, this.state.numberIngredients,this.state.ingredients);        
         this.props.sendFormData(this.state.cuisine, this.state.numberIngredients,this.state.ingredients)
     }
 
