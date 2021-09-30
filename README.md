@@ -19,11 +19,17 @@
 <p>
  
 <h2>Prerequisites</h2>
+- Install NodeJS from 'https://nodejs.org/en/download/'
+
+## Setup
+
+- clone repository using 'git clone https://github.com/gokul-koganti/Recipe_Recommender.git'
+- setup for frontend
+- setup for backend
 
 <h2> Execution Steps</h2>
 <ol>
-  <li> Setup Node with default settings. </li>
-  <li> Clone this github repository.</li>
+  <li> clone repository using 'git clone https://github.com/gokul-koganti/Recipe_Recommender.git' </li>
   <li> Open terminal and navigate to the backend folder.</li>
   <li> Run the following Commands:
     <ul>
