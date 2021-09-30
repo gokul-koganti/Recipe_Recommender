@@ -46,5 +46,4 @@
   <li> Backend server will be hosted at: http://localhost:5000/ </li>
 </ul>
 
-Roadmap
-Team Members
+
