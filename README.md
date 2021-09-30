@@ -17,23 +17,40 @@
     Cooking is a basic survival skill and it is more than standing infront of the stove and following instructions. Figuring out what to cook with what we have is equally. If we start cooking something that comes on top off our head, we might end up messing it when we find that an ingredient is missing. So we have decided to come up with an application that would help us breeze past the cooking process in this time-crunch world.
 </p>
 <p>
- 
-## Prerequisites
-  Install NodeJS from `https://nodejs.org/en/download/`
+  
+## Documentation
 
-## Setup
+Source documentation can be found at: [Recipe Recommender Docs]
+  
+## Technologies Used
+
+-   NodeJS library - ReactJS, express, mongodb, nodemon, axios
+-   HTML
+-   CSS
+  
+## Software Requirements
+
+-   [Node.js v14.7.6](https://nodejs.org/en/download/)
+-   [NPM v6.14.15](https://nodejs.org/en/download/)
+
+## Project Setup Steps
 
 - clone repository using `git clone https://github.com/gokul-koganti/Recipe_Recommender.git`
 - setup for frontend
-    open terminal and navigate to the frontend folder and execute `npm install`
+    open terminal and navigate to the **frontend** folder and execute `npm install`
 - setup for backend
-    open terminal and navigate to the frontend folder and execute `npm install`
+    open terminal and navigate to the **backend** folder and execute `npm install`
+  
+### IDE and Code Formatter
 
+-   [Visual Studio Code](https://code.visualstudio.com/) IDE
+-   [Prettier Formatter for Visual Studio Code](https://github.com/prettier/prettier-vscode/blob/main/README.md)
+  
 ## Execution Steps
 
- - start backend server using `npx nodemon`
- - start frontend server using `npm start`
- - automatically a browser window is opened
+ 1. start backend server using `npx nodemon`
+ 2. start frontend server using `npm start`
+ 3. automatically a browser window is opened
 
 ## Roadmap
 ## Team Members
