@@ -34,7 +34,8 @@ class App extends Component{
         ingredients:ingredientsInput
 
       })
-      const items = ['jackfruit']
+  
+      const items = Array.from(ingredientsInput)
       this.getRecipeDetails(items[0]);
 
   };
