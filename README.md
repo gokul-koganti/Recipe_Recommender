@@ -56,12 +56,23 @@ Source documentation can be found at: [Recipe Recommender Docs] https://github.c
 -   [Visual Studio Code](https://code.visualstudio.com/) IDE
 -   [Prettier Formatter for Visual Studio Code](https://github.com/prettier/prettier-vscode/blob/main/README.md)
   
+  
+  
 ## Execution Steps
 
  1. start backend server using `npx nodemon`
  2. start frontend server using `npm start`
  3. automatically a browser window is opened
  4. run`npm test` for running the tests [Dependencies: Jest, Chai, Supertest]
+  
+## WorkFlow
+![Screenshot 2021-09-30 at 11 34 49 PM](https://user-images.githubusercontent.com/17452184/135561662-d0099841-a358-4ead-94bb-6b360380921c.jpg)
+![Screenshot 2021-09-30 at 11 35 17 PM](https://user-images.githubusercontent.com/17452184/135561671-7975b434-413f-4088-bd22-89c0219f5d74.jpg)
+![Screenshot 2021-09-30 at 11 35 50 PM](https://user-images.githubusercontent.com/17452184/135561674-6914bf8c-90f1-4f28-a146-f8cdae514654.jpg)
+![Screenshot 2021-09-30 at 11 36 37 PM](https://user-images.githubusercontent.com/17452184/135561676-ac4e9381-4988-49f0-b189-7202ac83d801.jpg)
+![Screenshot 2021-09-30 at 11 36 59 PM](https://user-images.githubusercontent.com/17452184/135561683-67dc56c5-011f-4d6c-b89c-b9fdde076795.jpg)
+
+ 
 
 ## Roadmap
   <h3> Completed tasks</h3>
