@@ -56,6 +56,7 @@ Source documentation can be found at: [Recipe Recommender Docs]
  1. start backend server using `npx nodemon`
  2. start frontend server using `npm start`
  3. automatically a browser window is opened
+ 4. run`npm test` for running the tests [Dependencies: Jest, Chai, Supertest]
 
 ## Roadmap
   <h3> Completed tasks</h3>
