@@ -2,11 +2,13 @@
 <a href="https://doi.org/10.5281/zenodo.5534986"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5534986.svg" alt="DOI"></a>
 <img src="https://img.shields.io/github/license/gokul-koganti/Recipe_Recommender">
 
-![image](https://user-images.githubusercontent.com/22192754/135554119-f69a8c62-9e95-4a5c-b377-9d9bc0280013.png)
 
   
   <h2> Motivation </h2>
-  <h3> An excerpt from " Diary of a wimpy kid "</h3>
+  ![image](https://user-images.githubusercontent.com/22192754/135554119-f69a8c62-9e95-4a5c-b377-9d9bc0280013.png)
+
+  <h3> An excerpt from " Diary of a hungry kid "</h3>
+  
   <p> One day my roommate and I went grocery shopping. My roommate has bought potatoes and frosting to make a weird dish for the next day's lunch. The next day, I woke up early at 2:07 pm to help my roommate with this dish, that I know nothing about, only to find him nowhere. He had gone to the library to work on his Software Engineering project. HOW SELFISH OF HIM? I AM LITERALLY STARVING HERE AND HE GOES OFF SOMEWHERE TO DO HIS PROJECT THAT IS SOON DUE ?
 </p>
 <p>
