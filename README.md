@@ -80,4 +80,4 @@ Source documentation can be found at: [Recipe Recommender Docs]
   * Gokul Krishna Koganti (gkogant@ncsu.edu)
   * Rachana Kondabala (rkondab@ncsu.edu)
   * Harikrishna Selvaraj (hselvar2@ncsu.edu)
-  * Kiran Bharadwaj(kganesh4@ncsu.edu) 
+  * Kiran Bharadwaj (kganesh4@ncsu.edu) 
