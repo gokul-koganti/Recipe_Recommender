@@ -7,4 +7,10 @@ describe("GET /recipes", function () {
 
     expect(response.status).to.eql(200);
   });
+
+  it("is the API is fetching the filtered ingredient", async function () {
+    const response = await request.get("/recipes?CleanedIngredients=pear");
+
+    expect(response.body.filters.CleanedIngredients).to.eql("pear");
+  });
 });
