@@ -61,6 +61,7 @@ Source documentation can be found at: [Recipe Recommender Docs]
   <li> Provide recipe reccomendations based on multiple ingredients.</li>
   <li> Classify recipes into vegan / vegetarian / non-vegetarian categorizations</li>
   </ol>
+  
 ## Team Members
   * Smayana Pidugu 
   * Gokul Krishna Koganti (gkogant@ncsu.edu)
