@@ -60,7 +60,7 @@ Source documentation can be found at: [Recipe Recommender Docs]
 ## Roadmap
   <h3> Completed tasks</h3>
   <ol>
-  <li> Desingned a User Interface using React JS library.</li>
+  <li> Designed a User Interface using React JS library.</li>
   <li> Hosted the dataset on Mongo Database System. </li>
   <li> Performed querying and busniess logic implementation as part of backend module using Express JS library.</li>
   <li> Integration of backend and frontedn is done with the assistance of Axios library.</li>
@@ -76,8 +76,8 @@ Source documentation can be found at: [Recipe Recommender Docs]
   </ol>
   
 ## Team Members
-  * Smayana Pidugu 
+  * Smayana Pidugu (spidugu@ncsu.edu)
   * Gokul Krishna Koganti (gkogant@ncsu.edu)
-  * Rachana Kondabala
-  * Harikrishna Selvaraj
-  * Kiran Bharadwaj
+  * Rachana Kondabala (rkondab@ncsu.edu)
+  * Harikrishna Selvaraj (hselvar2@ncsu.edu)
+  * Kiran Bharadwaj(kganesh4@ncsu.edu) 
