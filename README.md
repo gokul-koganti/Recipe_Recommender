@@ -19,6 +19,11 @@
 <p>
   
 ## Documentation
+  
+  Recipe Recommender is a website that suggests user simple food recipes based on ingredients provided. 
+  Currently, 
+  - Only one ingredients is considered
+  - For each recipe, ingredients and instructions are shown
 
 Source documentation can be found at: [Recipe Recommender Docs]
   
