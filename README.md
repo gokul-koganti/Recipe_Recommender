@@ -8,9 +8,9 @@
   
  <img width="704" alt="Screen Shot 2021-09-30 at 10 00 44 PM" src="https://user-images.githubusercontent.com/22192754/135554303-f1436345-9b19-4509-abd7-f0d1c1adc24c.png">
 
-  <h3> An excerpt from " Diary of a hungry kid "</h3>
+  <h3> An excerpt from " Diary of a hungry kid 😭"</h3>
   
-  <p> One day my roommate and I went grocery shopping. My roommate has bought potatoes and frosting to make a weird dish for the next day's lunch. The next day, I woke up early at 2:07 pm to help my roommate with this dish, that I know nothing about, only to find him nowhere. He had gone to the library to work on his Software Engineering project. HOW SELFISH OF HIM? I AM LITERALLY STARVING HERE AND HE GOES OFF SOMEWHERE TO DO HIS PROJECT THAT IS SOON DUE ?
+  <p> One day my roommate and I went grocery shopping. My roommate has bought potatoes and frosting to make a weird dish for the next day's lunch. The next day, I woke up early at 2:07 pm to help my roommate with this dish, that I know nothing about, only to find him nowhere. He had gone to the library to work on his Software Engineering project. HOW SELFISH OF HIM? I AM LITERALLY STARVING HERE AND HE GOES OFF SOMEWHERE TO DO HIS PROJECT THAT IS SOON DUE ? 🤬🤬
 </p>
 <p>
   After 1 hr of angry rants, I have realized that I should eat something to have a good siesta. But I didn't know what to cook. People always told me that cooking is a basic survival skill and I should learn to cook. I always took it for granted. Now I cannot order food from outside because I was broke after purchasing that super cool, absolutely unnecessary, formula 1 merchandize. That is when I thought, if only there is an app that could help me find recipes based on the ingredients I have in my pantry.
