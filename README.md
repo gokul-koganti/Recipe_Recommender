@@ -5,7 +5,8 @@
 
   
   <h2> Motivation </h2>
-  ![image](https://user-images.githubusercontent.com/22192754/135554119-f69a8c62-9e95-4a5c-b377-9d9bc0280013.png)
+  
+ <img width="704" alt="Screen Shot 2021-09-30 at 10 00 44 PM" src="https://user-images.githubusercontent.com/22192754/135554303-f1436345-9b19-4509-abd7-f0d1c1adc24c.png">
 
   <h3> An excerpt from " Diary of a hungry kid "</h3>
   
