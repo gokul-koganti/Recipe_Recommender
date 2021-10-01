@@ -53,6 +53,14 @@ Source documentation can be found at: [Recipe Recommender Docs]
  3. automatically a browser window is opened
 
 ## Roadmap
+  <h3> Future tasks</h3>
+  <ol>
+  <li> Add filtering system based on cusine, Number of ingredients and calorie intake.</li>
+  <li> Integrate the current dataset with review dataset and provide users with recipe ratings and reviews.</li>
+  <li> Suggest nearby restaurants based on recipes generated.</li>
+  <li> Provide recipe reccomendations based on multiple ingredients.</li>
+  <li> Classify recipes into vegan / vegetarian / non-vegetarian categorizations</li>
+  </ol>
 ## Team Members
   * Smayana Pidugu 
   * Gokul Krishna Koganti (gkogant@ncsu.edu)
