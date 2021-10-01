@@ -2,6 +2,7 @@
 <a href="https://doi.org/10.5281/zenodo.5534986"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5534986.svg" alt="DOI"></a>
 <img src="https://img.shields.io/github/license/gokul-koganti/Recipe_Recommender">
 
+![image](https://user-images.githubusercontent.com/22192754/135554119-f69a8c62-9e95-4a5c-b377-9d9bc0280013.png)
 
   
   <h2> Motivation </h2>
