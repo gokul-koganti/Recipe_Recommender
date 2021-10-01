@@ -65,7 +65,7 @@ Source documentation can be found at: [Recipe Recommender Docs] https://github.c
  3. automatically a browser window is opened
  4. run`npm test` for running the tests [Dependencies: Jest, Chai, Supertest]
   
-## WorkFlow
+## Work Flow
 ![Screenshot 2021-09-30 at 11 34 49 PM](https://user-images.githubusercontent.com/17452184/135561662-d0099841-a358-4ead-94bb-6b360380921c.jpg)
 ![Screenshot 2021-09-30 at 11 35 17 PM](https://user-images.githubusercontent.com/17452184/135561671-7975b434-413f-4088-bd22-89c0219f5d74.jpg)
 ![Screenshot 2021-09-30 at 11 35 50 PM](https://user-images.githubusercontent.com/17452184/135561674-6914bf8c-90f1-4f28-a146-f8cdae514654.jpg)
