@@ -2,7 +2,7 @@ import mongodb from "mongodb"
 
 const ObjectId = mongodb.ObjectId
 let recipes
-
+//Function to connect to DB
 export default class RecipesDAO {
   static async injectDB(conn) {
     if (recipes) {
@@ -16,7 +16,7 @@ export default class RecipesDAO {
       )
     }
   }
-
+//Function to get the Recipe List
   static async getRecipes({
     filters = null,
     page = 0,
@@ -55,6 +55,7 @@ export default class RecipesDAO {
     }
   }
   
+  //Function to get the list of Cuisines
   static async getCuisines() {
     let cuisines = []
     try {

@@ -11,8 +11,8 @@ class Form extends Component{
 
         this.state = {
 
-            cuisine : "Any",
-            numberIngredients : 0,
+            //cuisine : "Any",
+            //numberIngredients : 0,
             ingredients : new Set()  
 
         }
@@ -20,7 +20,7 @@ class Form extends Component{
     }
 
     // function to change cuisine state, triggered on selection of a cuisine item.
-    cuisineUpdate = (event) => {
+    /*cuisineUpdate = (event) => {
 
         this.setState (
             {
@@ -30,9 +30,9 @@ class Form extends Component{
             }, () => console.log( this.state ) 
         )
     }
-
+    */
     // function to update the maximum number of ingredients in the state.
-    numberUpdate = (event) => 
+    /*numberUpdate = (event) => 
     {
         this.setState (
             {
@@ -41,7 +41,7 @@ class Form extends Component{
                 ingredients:this.state.ingredients
             }, () => console.log( this.state )
         )
-    }
+    }*/
     
     // function to display the ingredients added by the user upto that point.
     printHander = () => 
@@ -65,8 +65,8 @@ class Form extends Component{
 
         this.setState (
             {
-                cuisine : this.state.cuisine,
-                numberIngredients : this.state.numberIngredients,
+                //cuisine : this.state.cuisine,
+                //numberIngredients : this.state.numberIngredients,
                 ingredients : new Set( this.state.ingredients ).add( ingredient )
         
             }, () => console.log( this.state )
@@ -87,8 +87,8 @@ class Form extends Component{
 
         this.setState (
             {
-                cuisine : this.state.cuisine,
-                numberIngredients : this.state.numberIngredients,
+                //cuisine : this.state.cuisine,
+                //numberIngredients : this.state.numberIngredients,
                 ingredients : ingredientList
         
             }, () => console.log( this.state )
@@ -102,19 +102,20 @@ class Form extends Component{
     {
 
         event.preventDefault();        
-        this.props.sendFormData(this.state.cuisine, this.state.numberIngredients,this.state.ingredients)
+        //this.props.sendFormData(this.state.cuisine, this.state.numberIngredients,this.state.ingredients)
+        this.props.sendFormData(this.state.ingredients)
 
     }
 
     // render function dispays the UI content i.e the form content
     render(){
 
-        const cuisine_list = [ "Any", "Mexican", "Swedish", "Latvian", "Italian",
+       {/* const cuisine_list = [ "Any", "Mexican", "Swedish", "Latvian", "Italian",
         "Spanish", "American","Scottish","British","Thai","Japanese","Chinese",
         "Indian","Canadian","Russian","Jewish","Polish","German","French","Hawaiian",
         "Brazilian", "Peruvian","Cuban","Tibetian","Salvadorian","Egyptian","Greek",
         "Belgian","Irish","Welsh","Mormon","Cajun","Portugese","Turkish","Haitian",
-        "Tahitian","Kenyan","Korean","Algerian","Nigerian","Libyan" ]
+    "Tahitian","Kenyan","Korean","Algerian","Nigerian","Libyan" ]*/}
 
         // returns jsx element
         return(
@@ -123,35 +124,49 @@ class Form extends Component{
 
                 <form onSubmit={this.handleSubmit}>
                     
-                    <div id='FormContainer1'>
-                        <label class='sideLabel'> Ingredient: </label><br/>
-                        <input type = "text" id = "ingredient" /> 
+                    <div className="row pb-1">
+                    <div className="input-group col-lg-4 bg-danger text-white">
+                        <label class='sideLabel'> Ingredient: </label> <br/>
+                        <div className="input-group-append">
+                        <input type = "text" id = "ingredient" />
+                       
                         <button onClick = {this.addHandler} type = "button" id = "addButton" > Add item </button>
+                        </div>
+                    </div>
                     </div>
 
-                    <div id='FormContainer2'>
-                        <label class='sideLabel'>Added Items:</label><br/>
+                    <div className="row pb-1">
+                    <div className="input-group col-lg-4">
+                        <label class='sideLabel'>Added Items:</label><br/><br/><br/>
                         {this.printHander()}
-                    </div>
-
-                    <div id='FormContainer3'>
-                        <label class='sideLabel'> Maximum Number of Ingredients: </label><br/>
+                    </div></div>
+                    {/*
+                     <div className="row pb-1">
+                    <div className="input-group col-lg-4">
+                        <label class='sideLabel'>Maximum Number of Ingredients: </label><br/>
+                        <div className="input-group-append">
                         <input type = "number" id = "NoIngredient" onChange = {this.numberUpdate} /> 
+                        </div>
+                    </div>
                     </div>
                        
-                    <div id = 'FormContainer4'>
-                        <label class='sideLabel'> Cusine Selection: </label><br/>
+                    <div className="row pb-1">
+                    <div className="input-group col-lg-4">
+                        <label class='sideLabel'> Cusine Selection: </label><br/><br/>
                         <select value={this.state.cuisine} onChange={this.cuisineUpdate} >
                             {
                                 cuisine_list.map( (category, i) => <option key = {i}> {category} </option> )
                             }
                         </select>
                     </div>
+                        </div>*/}
 
-                    <div id = 'FormContainer5'>
+                    <div className="row pb-1">
+                    <div className="input-group col-lg-4">
                         <button type = "button" id = 'submit' onClick = {this.handleSubmit}> 
                             <h4> Search Recipes </h4> 
                         </button>
+                    </div>
                     </div>
 
                 </form>

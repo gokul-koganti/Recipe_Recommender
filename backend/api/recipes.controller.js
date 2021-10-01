@@ -6,6 +6,7 @@ export default class RecipesController {
     const page = req.query.page ? parseInt(req.query.page, 10) : 0
 
     let filters = {}
+    //Checking the query to find the required results
     if (req.query.cuisine) {
       filters.cuisine = req.query.cuisine
     } else if (req.query.CleanedIngredients) {
@@ -17,7 +18,7 @@ export default class RecipesController {
       page,
       recipesPerPage,
     })
-
+    
     let response = {
       recipes:recipesList,
       page: page,
@@ -27,7 +28,7 @@ export default class RecipesController {
     }
     res.json(response)
   }
-
+//Function to get the cuisines
   static async apiGetRecipeCuisines(req, res, next) {
     try {
       let cuisines = await RecipesDAO.getCuisines()

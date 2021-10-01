@@ -4,9 +4,10 @@ import dotenv from "dotenv"
 import recipesDAO from "./dao/recipesDAO.js"
 dotenv.config()
 const MongoClient = mongodb.MongoClient
-
+//DB port number
 const port = process.env.PORT || 8000
 
+//Connection to MongoDB
 MongoClient.connect(
   process.env.RECIPES_DB_URI,
   {

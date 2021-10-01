@@ -1,7 +1,9 @@
+
+
 /* Styling for the head component */
 #head{
   
-  background-color: #282c34;
+  background-color: #880a1f;
 
   height: 100px;
   padding-top: 40px;
@@ -21,9 +23,14 @@
 
 }
 
+
+
+
+
+
 /* Styling for the container that is carrying the input form */
 .formOutercontainer{
-  width : 50%;
+  width : 90%;
 
   margin-left : 5%;
 
@@ -40,16 +47,25 @@
 
 }
 
+#FormContainer2, #FormContainer4 {
+
+  background-color : gray;
+
+}
+
+
 
 /* Styling for the side labels*/
 .sideLabel{
-  
-  font-size : large;
-  font-weight : bold;
 
-  margin : 8px 0;
-  margin-left : 5%;
-  margin-top : 15px;
+    float: left;
+  
+    font-size : large;
+    font-weight : bold;
+  
+    margin : 0px 0;
+    margin-left : 5%;
+    margin-top : 40px;
 
   display : inline-block;
 }
@@ -59,7 +75,7 @@ input {
   width : 10cm;
   padding : 12px 20px;
   margin : 8px 0;
-  margin-left: 5%;
+  margin-left: 7%;
 
   box-sizing : border-box;
   border: 2px solid rgb(165, 161, 161);
@@ -82,7 +98,7 @@ ul.addedIngredientList{
 
 /* Stylings to handle any list items in the entire page span*/
 
-li{
+li.addedIngredient,li.recipe_ingredient_item{
  
   padding: 12px 20px;
 
@@ -112,7 +128,7 @@ li:hover{
 
   height: 2%;
 
-  margin-left: 5%;
+  margin-left: 40%;
   margin-top: 10px;
   margin-bottom: 5px;
 
@@ -131,12 +147,12 @@ button{
   height:1cm;
 
   font-size: medium;
-  color:white;
+  color:black;
 
   margin-left: 5pt;
   margin-right: 5pt;
 
-  background-color:rgb(46, 45, 45) ;
+  background-color:azure ;
   
 }
 
@@ -167,7 +183,7 @@ select{
 
 /* styling for container that holds all the recipes*/
 #resultOuterContainer{
-  width: 85%;
+  width: 90%;
 
   margin-left: 5%;
   margin-top: 30px;
@@ -194,8 +210,8 @@ select{
   border-color: whitesmoke;
   border-width: 10px;
 
-  background-color:#282c34;
-  color: aliceblue;
+  background-color: white;
+  color: black;
 
   padding-right: 2%;
   padding-left: 2%;
@@ -208,9 +224,9 @@ select{
 img{
 
   margin-top: 20px;
-  margin-left: 5%;
+  margin-left: 40%;
   margin-bottom: 20px;
-
+ 
   width: 200px;
   height:200px;
   
@@ -229,8 +245,8 @@ ul.result_ingredients{
 /* Styling for the individial list items in recipe ingredient list*/
 li.recipe_ingredient_item{
 
-  background-color: whitesmoke;
-  color: black;
+  background-color: #AA0000;
+  color: white;
 
   border: 2px solid rgb(165, 161, 161);
   border-radius: 4px;
@@ -238,3 +254,30 @@ li.recipe_ingredient_item{
   font-size: medium;
   
 }
+
+
+ul.result_instructions{
+
+  
+
+}
+
+/* Styling for the individial list items in recipe ingredient list*/
+li.translated_instruction_item{
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

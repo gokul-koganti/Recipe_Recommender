@@ -14,21 +14,19 @@ class App extends Component{
       super()
 
       this.state={
-          cuisine : "Any",
-          NoIngredients : 0,
+          //cuisine : "Any",
+          //NoIngredients : 0,
           ingredients: new Set(),
-          video: null,
-          recipe: null,
           recipeList: []
         }
 
       }
     
     // Function to get the user input from the Form component on Submit action
-    handleSubmit = async (cuisineInput,noIngredientsInput,ingredientsInput) => {
+    handleSubmit = async (ingredientsInput) => {
       this.setState({
-        cuisine: cuisineInput,
-        NoIngredients: noIngredientsInput,
+        //cuisine: cuisineInput,
+        //NoIngredients: noIngredientsInput,
         ingredients:ingredientsInput
 
       })
