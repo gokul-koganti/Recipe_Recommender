@@ -1,6 +1,8 @@
 
 <a href="https://doi.org/10.5281/zenodo.5534986"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5534986.svg" alt="DOI"></a>
 <img src="https://img.shields.io/github/license/gokul-koganti/Recipe_Recommender">
+[![Made with](https://img.shields.io/badge/made%20with-javascript-gree)](https://www.javascript.com/)
+[![GitHub issues open](https://img.shields.io/github/issues/gokul-koganti/Recipe_Recommender)](https://github.com/gokul-koganti/Recipe_Recommender/issues)
 
 
   
