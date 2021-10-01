@@ -32,7 +32,7 @@
   - Only one ingredients is considered
   - For each recipe, ingredients and instructions are shown
 
-Source documentation can be found at: [Recipe Recommender Docs]
+Source documentation can be found at: [Recipe Recommender Docs] https://github.com/gokul-koganti/Recipe_Recommender/blob/master/docs/Recipe%20Recommender%20Source%20Documentation.pdf
   
 ## Technology Stack
   
