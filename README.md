@@ -58,13 +58,21 @@ Source documentation can be found at: [Recipe Recommender Docs]
  3. automatically a browser window is opened
 
 ## Roadmap
+  <h3> Completed tasks</h3>
+  <ol>
+  <li> Desingned a User Interface using React JS library.</li>
+  <li> Hosted the dataset on Mongo Database System. </li>
+  <li> Performed querying and busniess logic implementation as part of backend module using Express JS library.</li>
+  <li> Integration of backend and frontedn is done with the assistance of Axios library.</li>
+  </ol>
+  
   <h3> Future tasks</h3>
   <ol>
   <li> Add filtering system based on cusine, Number of ingredients and calorie intake.</li>
   <li> Integrate the current dataset with review dataset and provide users with recipe ratings and reviews.</li>
   <li> Suggest nearby restaurants based on recipes generated.</li>
   <li> Provide recipe reccomendations based on multiple ingredients.</li>
-  <li> Classify recipes into vegan / vegetarian / non-vegetarian categorizations</li>
+  <li> Classify recipes into vegan / vegetarian / non-vegetarian categorizations.</li>
   </ol>
   
 ## Team Members
