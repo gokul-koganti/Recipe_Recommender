@@ -1,28 +1,27 @@
 
-| Notes|Self - assesment |evidence|
-|-----|---------|-----------------|
-|workload is spread over the whole team (one team member is often Xtimes more productive than the others... 
-but nevertheless, here is a track record that everyone is contributing a lot)| 2 | https://github.com/gokul-koganti/Recipe_Recommender/pulse |
-| Number of commits| 2 | https://github.com/gokul-koganti/Recipe_Recommender/graphs/commit-activity |
-| Number of commits: by different people| 2 | https://github.com/gokul-koganti/Recipe_Recommender/graphs/contributors?from=2021-09-19&to=2021-09-30&type=c |
+| Notes|Self - assessment |evidence|
+|-----|-----|-----------------|
+|workload is spread over the whole team but nevertheless, here is a track record that everyone is contributing a lot)| 3 | https://github.com/gokul-koganti/Recipe_Recommender/graphs/contributors |
+| Number of commits| 3| https://github.com/gokul-koganti/Recipe_Recommender/graphs/commit-activity |
+| Number of commits: by different people| 3 | https://github.com/gokul-koganti/Recipe_Recommender/graphs/contributors?from=2021-09-19&to=2021-09-30&type=c |
 | Issues reports: there are **many**| 2 | https://github.com/gokul-koganti/Recipe_Recommender/issues | 
 |  issues are being  closed| 2 | https://github.com/gokul-koganti/Recipe_Recommender/issues?q=is%3Aissue+is%3Aclosed |
 | DOI badge: exists | 3 | https://zenodo.org/badge/DOI/10.5281/zenodo.5534986.svg |
-|Docs: doco generated , format not ugly | 2 | https://github.com/gokul-koganti/Recipe_Recommender/tree/master/docs|
-|Docs: what: point descriptions of each class/function (in isolation) | 2 | https://github.com/gokul-koganti/Recipe_Recommender/tree/master/docs |
-|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|2|doc page entries|
-|Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|
-|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.| 3 | readme|
+|Docs: doco generated , format not ugly | 3 | https://github.com/gokul-koganti/Recipe_Recommender/tree/master/docs|
+|Docs: what: point descriptions of each class/function (in isolation) | 2 | https://github.com/gokul-koganti/Recipe_Recommender/blob/master/docs/Recipe%20Recommender%20Source%20Documentation.pdf |
+|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|2|https://github.com/gokul-koganti/Recipe_Recommender/blob/master/docs/Recipe%20Recommender%20Source%20Documentation.pdf|
+|Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing| 3|https://github.com/gokul-koganti/Recipe_Recommender#readme|
+|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.| 3 | https://github.com/gokul-koganti/Recipe_Recommender#readme |
 | Use of version control tools| 3 | https://github.com/gokul-koganti/Recipe_Recommender/graphs/traffic |
-|Use of  style checkers | 2 |  |
-| Use of code  formatters. | 2 | |
-| Use of syntax checkers. | 2 |   |
-| Use of code coverage | 3 |  |
-| other automated analysis tools| 0 | config files in GH|
-| test cases exist | 3 |  |
-| test cases are routinely executed | 3 | |
+|Use of  style checkers | |  |
+| Use of code  formatters. |  | |
+| Use of syntax checkers. |  |   |
+| Use of code coverage | |  |
+| other automated analysis tools| 0 | |
+| test cases exist | 3 | https://github.com/gokul-koganti/Recipe_Recommender/tree/master/backend/__tests__ |
+| test cases are routinely executed | 3 | https://github.com/gokul-koganti/Recipe_Recommender/tree/master/backend/__tests__|
 | the files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up| 3 | https://github.com/gokul-koganti/Recipe_Recommender/blob/master/CONTRIBUTING.md |
-| issues are discussed before they are closed | even if you discuss in slack, need a summary statement here| 2 | |
+| issues are discussed before they are closed | 2 | | |
 | Chat channel: exists| 3 | Whatsapp |
 | test cases:.a large proportion of the issues related to handling failing cases.| 0 | |
 | evidence that the whole team is using the same tools: everyone can get to all tools and files| 3 | Use of github |
