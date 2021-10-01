@@ -1,6 +1,5 @@
 import React from 'react';
 import '../video.css';
-import Card from 'react-bootstrap/Card'
 import VideoURL from './VideoURL';
 
 // Recipe component dealing with individial recipe items
