@@ -37,8 +37,8 @@ Is your project/software name free from trademark violations? | 3 |
 Is your software available as a package that can be deployed without building it? | 3 |
 Is your software available for free? | 3 | 
 Is your source code publicly available to download, either as a downloadable bundle or via access to a source code repository | 3 | |
-Is your software hosted in an established, third-party repository like GitHub (https://github.com), BitBucket (https://bitbucket.org),LaunchPad (https://launchpad.net) orSourceForge (https://sourceforge.net)? | 3 | https://github.com/NCSU-Group7-SE2021/Binge |
-Is your documentation clearly available on your website or within your software? | 3 | https://github.com/NCSU-Group7-SE2021/Binge/tree/main/docs |		
+Is your software hosted in an established, third-party repository like GitHub (https://github.com), BitBucket (https://bitbucket.org),LaunchPad (https://launchpad.net) orSourceForge (https://sourceforge.net)? | 3 | https://github.com/gokul-koganti/Recipe_Recommender |
+Is your documentation clearly available on your website or within your software? | 3 | https://github.com/gokul-koganti/Recipe_Recommender/tree/master/docs |		
 Does your documentation include a "quick start" guide, that provides a short overview of how to use your software with some basic examples of use? | 3 | https://github.com/gokul-koganti/Recipe_Recommender/blob/master/README.md	|	
 If you provide more extensive documentation, does this provide clear, step-by-step instructions on how to deploy and use your software? | 3 |  |	
 Do you provide a comprehensive guide to all your software’s commands, functions and options? | 3 |  |
